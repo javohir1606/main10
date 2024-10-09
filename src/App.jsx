@@ -8,6 +8,7 @@ import { Conpanet } from "./pages/conpanet/conpanet";
 import { Menu } from "./pages/menu/menu";
 import { Serves } from "./pages/serves/serves";
 import { About } from "./pages/about/about";
+import {CardNew} from "./components/new/new";
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
           <Route path="aksiya" element={<Aksiya />} />
           <Route path="servic" element={<Serves />} />
           <Route path="menu" element={<Menu />} />
+          <Route path="cardNew" element={<CardNew />}/>
         </Route>
       </Routes>
     </>

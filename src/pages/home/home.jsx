@@ -1,12 +1,7 @@
-import { data } from "autoprefixer";
 import { CatalogData } from "../../Data/data";
 import { Slider } from "../silaydir/silaydir";
-import { Project } from "../../components/project/project";
-import { NewItems } from "../../components/Newitems/newitems";
 import { Skidka } from "../../components/skidki/skidki";
-import { NewProduckt } from "../../components/Newproduck";
-import { New } from "../../components/New/new";
-import { NewCard } from "../../components/newcard";
+import { Conpont } from "../../components/conpont/conpont";
 export const Home = () => {
   return (
     <>
@@ -14,12 +9,10 @@ export const Home = () => {
         <div className="flex gap-5">
           <div className=" p-[8px] w-[310px] bg-[#fff] text-start">
             {CatalogData.map((item) => (
-              <>
-                <div className="flex gap-[10px] mb-[13px] mt-[20px]">
-                  <img src={item.img} alt="" />
-                  <h1>{item.title}</h1>
-                </div>
-              </>
+              <div className="flex gap-[10px] mb-[13px] mt-[20px]" key={item.id}>
+                <img src={item.img} alt="" />
+                <h1>{item.title}</h1>
+              </div>
             ))}
           </div>
           <div className="">
@@ -27,13 +20,13 @@ export const Home = () => {
           </div>
         </div>
         <div className="">
-          <Project />
-          <NewItems />
+          <Conpont />
           <Skidka />
-          <NewProduckt />
-          <New />
+          <Conpont />
+          <Conpont />
           <Skidka />
-          <NewCard />
+          <Conpont />
+          <Conpont />
         </div>
       </div>
     </>

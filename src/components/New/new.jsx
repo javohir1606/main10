@@ -1,8 +1,9 @@
-import { Conpont } from "../conpont/conpont";
-export const New = () => {
-  return (
-    <>
-     <Conpont />
-    </>
-  );
-};
+import React from 'react'
+
+export const CardNew = () =>{
+  return <>
+  <div className="container">
+    <h2>lorem</h2>
+  </div>
+  </>
+}
